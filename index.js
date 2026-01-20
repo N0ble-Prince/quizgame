@@ -2,10 +2,10 @@ import express from "express";
 import pg from "pg";
 import dotenv from "dotenv";
 
-dotenv.config()
+dotenv.config();
 
 const app = express();
-const port = 3000;
+const port = process.env.PORT;
 
 //db.connect();
 const { Pool } = pg;
@@ -89,4 +89,5 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 
 });
+
 
