@@ -17,6 +17,7 @@ const pool = new Pool({
   }
 });
 
+pool.connect();
 let quiz = [];
 
 pool.query("SELECT * FROM capitals", (err, res) => {
@@ -25,7 +26,7 @@ pool.query("SELECT * FROM capitals", (err, res) => {
   } else {
     quiz = res.rows;
   }
-  db.end();
+  pool.end();
 });
 
 let totalCorrect;
@@ -88,3 +89,4 @@ app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 
 });
+
