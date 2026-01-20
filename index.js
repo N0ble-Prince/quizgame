@@ -19,7 +19,7 @@ const pool = new Pool({
 
 let quiz = [];
 
-db.query("SELECT * FROM capitals", (err, res) => {
+pool.query("SELECT * FROM capitals", (err, res) => {
   if (err) {
     console.error("Error executing query", err.stack);
   } else {
@@ -86,4 +86,5 @@ async function nextQuestion() {
 
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
+
 });
