@@ -4,6 +4,7 @@
   "description": "A game for Nigerian Capitals",
   "main": "index.js",
   "type": "module",
+  "start": "node index.js"
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
