@@ -71,3 +71,32 @@ footer p {
     background-color: #2b6d57;
 }
 
+@media screen and (max-width: 600px) {
+    body {
+        background-size: 400%;
+        background-position: center;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .container {
+        margin: 35% auto;
+        max-width: 60%;
+    }
+
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (orientation: landscape) {
+    footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+}
