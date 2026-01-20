@@ -1,0 +1,19 @@
+{
+  "name": "capitals_quiz",
+  "version": "1.0.0",
+  "description": "A game for Nigerian Capitals",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Bernadine Jnr",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.2.3",
+    "ejs": "^3.1.10",
+    "express": "^5.2.1",
+    "pg": "^8.16.3"
+  }
+}

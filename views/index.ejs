@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Nigeria::States and Capital</title>
+</head>
+<body id="app">
+    
+    <form action="/submit" method="POST" class="container">
+        <div class="score">
+            <h3>Total Score: <%= locals.totalScore ? totalScore : "0" %></h3>
+        </div>
+        <div class="state-name">
+            <h1><%= question.state %></h1> 
+        </div>
+        <input class="answer-box" type="text" name="answer" placeholder="Enter your answer" autofocus autocomplete="off" required>
+        <input class="button" type="submit" value="Submit">
+    </form>
+   
+<%- include("partials/footer") %>
+
+<script>
+    var wasCorrect = "<%= locals.wasCorrect %>";
+    console.log(wasCorrect)
+</script>
